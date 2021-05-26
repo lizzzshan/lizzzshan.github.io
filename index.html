@@ -1,23 +1,48 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <title>Portfolio</title>
+  <link rel="shortcut icon" href="images/portfolio.png" type="image/x-icon">
 <link rel="stylesheet" href="css/style.css">
 <style> 
 body {
-  background-image: url(images/index-bg.png);
   background-repeat: no-repeat, repeat;
   background-color: #fff9e6;
 }
+    .project {
+        width: 200px;
+        height: 300px;
+        background: url("images/project_egg.png") no-repeat;
+        margin: 0 auto;
+        position: relative;
+    }
+    .project:hover {
+        background: url("images/project_egg2.png") no-repeat;
+    }
+
+    .exp {
+        width: 200px;
+        height: 300px;
+        background: url("images/exp_egg.png") no-repeat;
+        margin: 0 auto;
+        position: relative;
+    }
+    .exp:hover {
+        background: url("images/exp_egg2.png") no-repeat;
+    }
+
 </style>
 </head>
 <body>
-    <p class="aligncenter">
-        <img src="images/portfolio.png" alt="centered image" />
-    </p>
-    <h2> Welcome to my portfolio </h2>
-    <p class = "aligncenter"> Some stuff about me blah blah blah </p>
-    <p class = "aligncenter"> text text text text text text text text text text text </p>
-    <p class = "aligncenter"> text text text text text text text text text text text </p>
-    <p class = "aligncenter"> text text text text text text text text text text text </p>
+  <p class= "aligncenter">
+    <img src="images/portfolio.png" alt="Portfolio icon">
+  </p>
+    <div class = "container"> 
+      <a href="projects.html"><div class="project"></div></a>
+      <a href="exp.html"><div class="exp"></div></a>
+    </div>
+    <div class = "container"> 
+      <p> idk I'll probably add some short about me snippet here</p>
+    </div>
 </body>
 </html>
