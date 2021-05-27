@@ -5,3 +5,33 @@
 .alignright {
     text-align: right;
 }
+
+.floatleft {
+    float: left;
+    margin : 10px;
+}
+
+.content-wrap{
+    max-width : 800px;
+    width : 85%;
+    margin : 0 auto;
+    padding : 60 px 0;
+}
+
+/*p font adjustment ---------*/
+p {
+    font-size: 13px;
+    font-family: "Georgia", Times, serif;
+  }
+
+/* project 1  ----------------- ADD IMAGE */
+.banner {
+    padding: 50px;
+    background-color: #ffd699;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1{
+    color : #cc7a00; 
+}
