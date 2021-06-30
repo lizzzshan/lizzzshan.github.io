@@ -18,10 +18,10 @@
     padding : 60 px 0;
 }
 
-/*p font adjustment ---------*/
+/*p font + size adjustment ---------*/
 p {
     font-size: 13px;
-    font-family: "Georgia", Times, serif;
+    font-family: "Monaco", monospace;
   }
 
 /* project 1  ----------------- ADD IMAGE */
