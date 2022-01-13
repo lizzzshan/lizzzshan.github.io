@@ -5,15 +5,11 @@
 .alignright {
     text-align: right;
 }
-
-img {
-    width : 160px;
-}
 h2 {
     text-align: center;
 }
 p {
-    font-size: 13px;
+    font-size: 15px;
     font-family: "Monaco", monospace;
   }
 .container {

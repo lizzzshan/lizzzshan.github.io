@@ -1,6 +1,8 @@
-.aligncenter {
-    text-align: center;
-}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
 .alignright {
     text-align: right;
@@ -25,10 +27,9 @@ p {
   }
 
 /* project 1  ----------------- ADD IMAGE */
-.banner {
-    padding: 50px;
-    background-color: #ffd699;
-    background-size: cover;
+.banner1 {
+    background-image: url(images/bg2.png);
+    /*background-color: #ffd699; /*temp... add img*/
     background-repeat: no-repeat;
 }
 
