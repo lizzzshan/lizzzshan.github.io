@@ -1,96 +1,55 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-  <title>Home</title>
-  <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
-<link rel="stylesheet" href="css/style.css">
-<style> 
-body {
-  background-color: rgb(202, 174, 132);
-}
-    .project {
-        width: 200px;
-        height: 300px;
-        background: url("images/project_egg.png") no-repeat;
-        margin: 0 auto;
-        position: relative;
-    }
-    .project:hover {
-        background: url("images/project_egg2.png") no-repeat;
-    }
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="nav.css" />
+    <title>Home</title>
+    <link rel="shortcut icon" href="images/icon.png" type="image/x-icon"> 
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Neuton:wght@700&family=Permanent+Marker&family=Oswald:wght@500&family=Staatliches&display=swap');
+    </style>
+  </head>
 
-    .exp {
-        width: 200px;
-        height: 300px;
-        background: url("images/exp_egg.png") no-repeat;
-        margin: 0 auto;
-        position: relative;
-    }
-    .exp:hover {
-        background: url("images/exp_egg2.png") no-repeat;
-    }
+  <body style="background-color: white">
+    <style>
+      body {
+        background-image: url('images/me.png');
+        background-size:400px;
+        background-repeat: no-repeat;
+        float: right;
+      }
+      .button {
+        background-color: black;
+        color: white;
+        padding: 15px 10px;
+        text-align: center;
+        text-decoration: none;
+        font-family: 'Playfair Display', serif;
+        display: inline-block;
+        font-size: 16px;
+      }
+      </style>
+    <div style="padding:10px 100px;">
+      <p>
 
-    .about {
-        width: 200px;
-        height: 300px;
-        background: url("images/about_egg.png") no-repeat;
-        margin: 0 auto;
-        position: relative;
-    }
-    .about:hover {
-        background: url("images/about_egg2.png") no-repeat;
-    }
-
-</style>
-</head>
-<body>
-  <nav class="navbar navbar-expand-lg navbar-light" style = "background-color: #aa957d;">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item active">
-          <a class="nav-link disabled" href="#">Home <span class="sr-only"></span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="projects.html">Projects</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="exp.html">Experience</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="about.html">About Me</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://github.com/lizzzshan"><img src="images/github_logo.png" height="20px" width="20px" ></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://www.linkedin.com/in/elizabeth-shan-776b13183/"><img src="images/linkedin.png" height="20px" width="20px" ></a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-  
-  <div class = "container">
-    <img src="images/portfolio.png" width="180" height="180" alt="Portfolio icon">
-    <p>
-      <br> My name is Elizabeth Shan & I am currently a 4th year student majoring in 
-      <br>computer science & minoring in economics. I would say creativity in design is
-      <br>my strong suit! I love to incorporate my unique ideas into the work I do, & I 
-      <br>hope to demonstrate this to you through my website! Secretly a wizard. 
-      <br> 𝑷𝒍𝒆𝒂𝒔𝒆 𝒄𝒍𝒊𝒄𝒌 𝒐𝒏 𝒕𝒉𝒆 𝒎𝒂𝒈𝒊𝒄𝒂𝒍 𝒆𝒈𝒈𝒔 𝒕𝒐 𝒄𝒐𝒏𝒕𝒊𝒏𝒖𝒆 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+      </p>
+      <h1 style="color:black; font-family: 'Staatliches', cursive; width:700px; font-size:70px;">
+      Hello, I'm Liz Shan. Welcome to my page!
+    </h1>
+    <p style="color:black; font-family: 'Oswald', sans-serif; width:600px; font-size:25px"> 
+      This is my personal website portfolio that gives you insight on my works through code & art projects, achievements, and experience.
+      Click on the buttons below to browse my works!
     </p>
+    <a href="stocks.html" class="button">Experience & education</a>
+    <a href="stocks.html" class="button">Projects & achievements</a>
+    <a href="gallery.html" class="button">Art gallery</a>
+    <a href="about.html" class="button">About me</a>
+    <br>
+    <br>
+    <a href="https://www.linkedin.com/in/elizabeth-shan-776b13183/"> <img src="images\linkedin.png" alt="linkedin"> </a>
+    <a href="https://github.com/lizzzshan"><img src="images\github.png" alt="github logo"></a>
   </div>
-  <div class ="container"> 
-    <a href="projects.html"><div class="project"></div></a>
-    <a href="about.html"><div class="about"></div></a>
-    <a href="exp.html"><div class="exp"></div></a>
-  </div>
-  <!-- Art disclaimer -->
-  <div class ="container">
-    <p style="font-size:10px"> © Art by me, please do not reuse or redistribute</p>
-  </div>
-</body>
+  </body>
 </html>
