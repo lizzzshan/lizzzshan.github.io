@@ -1,57 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-    <link rel="stylesheet" href="nav.css" />
-    <title>Home</title>
-    <link rel="shortcut icon" href="images/icon.png" type="image/x-icon"> 
-    <style>
-      @import url('https://fonts.googleapis.com/css2?family=Neuton:wght@700&family=Permanent+Marker&family=Oswald:wght@500&family=Staatliches&display=swap');
-    </style>
-  </head>
-
-  <body style="background-color: white;">
-    <style>
-      body {
-        background-image: url('images/me.png');
-        background-size:400px;
-        background-repeat: no-repeat;
-        float: right;
-        width:auto;
-      }
-      .button {
-        background-color: black;
-        color: white;
-        padding: 15px 10px;
-        text-align: center;
-        text-decoration: none;
-        font-family: 'Playfair Display', serif;
-        display: inline-block;
-        font-size: 16px;
-      }
-      </style>
-    <div style="padding:10px 100px; width:100%">
-      <p>
-
-      </p>
-      <h1 style="color:black; font-family: 'Staatliches', cursive; width:700px; font-size:70px;">
-      Hello, I'm Liz Shan. Welcome to my page!
-    </h1>
-    <p style="color:black; font-family: 'Oswald', sans-serif; width:600px; font-size:25px"> 
-      This is my personal website portfolio that gives you insight on my works through code & art projects, achievements, and experience.
-      Click on the buttons below to browse my works!
-    </p>
-    <a href="experience.html" class="button">Experience & education</a>
-    <a href="projects.html" class="button">Projects & achievements</a>
-    <a href="gallery/lightbox-gallery-with-bootstrap/dist/gallery.html" class="button">Art gallery</a>
-    <a href="about.html" class="button">About me</a>
-    <br>
-    <br>
-    <a href="https://www.linkedin.com/in/elizabeth-shan-776b13183/"> <img src="images\linkedin.png" width="50px"alt="linkedin"> </a>
-    <a href="https://github.com/lizzzshan"><img src="images\github.png" width="50px" alt="github logo"></a>
-    <a href="https://www.instagram.com/calamanzii/"><img src="images\instagram.png" width="50px" alt="github logo"></a>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Nunito+Sans:wght@200&display=swap" rel="stylesheet">
+  <title>Liz Shan portfolio</title>
+  <!-- responsive flexbox src: https://www.w3schools.com/css/css3_flexbox_responsive.asp -->
+</head>
+<body>
+  <div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="projects.html">Projects</a>
+    <a href="experience.html">Experience</a>
+    <a href="gallery.html">Gallery</a>
   </div>
-  </body>
+  <br>
+  <br>
+  <!-- Leaf border here -->
+  <div class="center">
+    <img src="images/divider.png" width="50%"alt="grassy divider"><img src="images/divider.png" width="50%"alt="grassy divider">
+  </div>
+  
+  <div class="flex-container">
+    <div class="flex-item-left">
+      <img src="images/caro.png" width="65%" alt="index page drawing">
+    </div>
+    <div class="flex-item-right">
+      <h1 style="color:rgba(15, 14, 14, 0.705)"> Hello! I'm Liz Shan.</h1>
+      <p style="color:rgb(83, 70, 54); font-size: 25px;">
+        I draw & I code. A hopeful soon-to-be developer.
+        <br> Feel free to explore my page by clicking the links below,
+        or keep scrolling to read more about me!
+        <br>
+      </p>
+        <a href="experience.html" class="button">Experience & education</a>
+        <a href="projects.html" class="button">Projects & achievements</a>
+        <a href="gallery.html" class="button">Art gallery</a>
+        <a href="#about-me" class="button">About me</a>
+        <br>
+        <br>
+        <a href="https://www.linkedin.com/in/elizabeth-shan-776b13183/"> <img src="images\linkedin.png" width="50px"alt="linkedin"></a>
+        <a href="https://github.com/lizzzshan"><img src="images\github.png" width="50px" alt="github logo"></a>
+        <a href="https://www.instagram.com/calamanzii/"><img src="images\instagram.png" width="50px" alt="github logo"></a>
+        <p style="color:rgb(83, 70, 54); font-size:13px">ⓒ All art on this website is drawn by me unless specificed otherwise. Please do not reuse or repost without permission. </p>
+    </div>
+  </div>
+  <div class="center">
+    <img src="images/divider.png" width="50%"alt="grassy divider"><img src="images/divider.png" width="50%"alt="grassy divider">
+  </div>
+    <div id="about-me">
+    <div class="flex-container">
+      <div class="flex-item-left">
+        <h1 style="color:rgba(74, 82, 69, 0.705)"> It's nice to meet you!</h1>
+        <div class="flex-container">
+          <div class="flex-item-left">
+            <img src="images/grad_icon.png" width="150px" alt="grad icon!">
+          </div>
+          <div class="flex-item-right">
+            <p style="color:rgb(83, 70, 54); font-size:20px;padding: 10px; border: 2px solid rgb(56, 69, 56);">I am a recent grad
+              from University of Colorado Boulder with a BA in computer science and a minor in economics.
+              I have the most experience in software, though I also love design and UI/UX.</p>
+          </div>
+          <div class="flex-container">
+            <div class="flex-item-left">
+              <p style="color:rgb(83, 70, 54); font-size:20px;padding: 10px; border: 2px solid rgb(56, 69, 56);">Aside from art, my hobbies include nature & gardening.
+              I maintain a mini greenhouse with too many houseplants to count, & a small worm bin.</p>
+            </div>
+            <div class="flex-item-right">
+              <img src="images/flower.png" width="150px" alt="flower icon!">
+            </div>
+          </div>
+        </div>
+      
+      </div>
+      <div class="flex-item-right">
+        <img src="images/me.png" width="65%" alt="index page drawing">
+      </div>
+    </div>
+
+    <div class="flex-container">
+      <div class="flex-item-left">
+        <img src="images/meandranger.png" width="400px" alt="pic of me and ranger" style="border-radius: 8px;">
+        <p style="color:rgb(83, 70, 54); font-size:small">Photograph creds to <a href="https://www.instagram.com/aisle10_photo/" style="color:green">URAMESHI</a></p>
+      </div>
+      <div class="flex-item-right">
+        <div class="flex-container">
+          <div class="flex-item-left">
+            <img src="images/worm.png" width="160px" alt="worm icon!">
+          </div>
+          <div class="flex-item-right">
+            <p style="color:rgb(83, 70, 54); font-size:20px;padding: 10px; border: 2px solid rgb(56, 69, 56);">I am always looking for more ways to be more sustainable.
+              One of the most rewarding things I do is vermicompost, which is basically composting but with worms. 
+              I give worms my food & paper scraps, & in return they give me the best kind of fertilizer: worm castings.
+              I prevent my food waste from going into the landfill, & my worms give me fertilizer for my plants. It's a win-win!
+            </p>
+          </div>
+        </div>
+
+        <div class="flex-container">
+          <div class="flex-item-left">
+            <p style="color:rgb(83, 70, 54); font-size:20px;padding: 10px; border: 2px solid rgb(56, 69, 56);">
+              I also love my dogs Ranger & Missy! During the summer I am almost always at the dog park with them.
+          </div>
+          <div class="flex-item-right">
+            <img src="images/ranger-missy.png" width="200px" alt="dogs icon!">
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
 </html>
