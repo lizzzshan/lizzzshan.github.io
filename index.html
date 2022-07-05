@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="general.css">
-    <title>Liz Shan</title>
+    <link rel="icon" href="img/potion.gif">
+    <title>The enchanted realm of Liz Shan</title>
     <!-- FONT import from google https://fonts.google.com/-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,16 +17,18 @@
 </script>
 <body style="background-color:rgb(149, 156, 141);">
     <div class="center">
-        <a href=#><img src = "img/logo.png" alt="logo" width ="100px" style="cursor:pointer;"></a>
+        <a href="index.html"><img src = "img/logo.png" alt="logo" width ="100px" style="cursor:pointer;"></a>
     </div>
     <div class="box" id="contextmenu">
         <!-- GOD BLESS U FR THANK U JUNKFOODJUNKIE ON STACKOVERFLOW <33333 https://stackoverflow.com/questions/40645032/creating-multiple-modals-on-a-single-page -->
         <a href="#modal1"><img src="img/icon1.gif" alt="animated icon" style="position:absolute;left:700px;top:285px; cursor:pointer;"></a><br>
         <a href="#modal2"><img src="img/potion.gif" alt="animated icon" width="40px" style="position:absolute;left:220px;top:75px; cursor:pointer;"></a><br>
         <a href="#modal3"><img src="img/letter.gif" alt="animated icon" width="40px" style="position:absolute;left:270px;top:75px; cursor:pointer;"></a><br>
+        <a href="#modal4"><img src="img/mirror.gif" alt="animated icon" width="35px" style="position:absolute;left:320px;top:72px; cursor:pointer;"></a><br>
+        <a href="#modal5"><img src="img/pen.gif" alt="animated icon" width="40px" style="position:absolute;left:360px;top:75px; cursor:pointer;"></a><br>
     </div>
     <p style="font-size: 14px; text-align: center;">2022 © All art by me, please do not redistribute, modify, or repost.
-      <br> This page is a work in progress</p>
+      <br> Not suited for mobile (yet). This page is a work in progress</p>
     
     <!-- MODAL CONTENT -->
     <div id="content">
@@ -34,12 +37,15 @@
             <a href="#" title="Close Menu" class="close">&#9747;</a>
             <div class="parent"> 
                 <!--  button disable -->
+                <div class="typewriter">
+                    THE CLOAKED STRANGER
+                </div>
                 <p style="font-size:13px;">As you make your way towards the <br>island you notice a hooded red figure 
                     <br>crouched down in the clearing, <br> picking at the ground in an almost <br> trance-like state.
                     <br>
                     <br>The cloaked figure seems <br> distracted at the moment. </p>
                 <button type="button" id="btn1" onclick="typeWriter()">➤ Tap on shoulder</button>
-                <p id="speech" style="font-size:13px;"></p>
+                <p id="speech" style="font-size:14px;"></p>
                 <div class="child"><img src="img/p1.png" width="160px"><br>
                     <a href="#">➤ Go back  </a></div>
             </div>
@@ -48,14 +54,51 @@
 
       <div id="modal2">
         <a href="#" title="Close Menu" class="close">&#9747;</a>
-        XP potion
-        <p style="font-size:13px;">This is Liz's dropped XP potion! Do you dare to drink it to gain her XP points? Results may vary.</p>
-        <a href="#">➤ Drink it! </a> 
+          <div class="typewriter">
+            YOU FOUND A XP POTION! DARE TO DRINK?
+            <br> [EXPERIENCE + PROJECTS]
+          </div>
+          <br>
+          <p style="font-size:14px;">
+            This is Liz's dropped XP potion! Do you dare to drink it to gain her XP points? Results may vary.
+          </p>
+        <a href="exp.html">➤ Drink it! </a> 
         <a href="#">➤ It's okay...  </a>
       </div>
       <div id="modal3">
         <a href="#" title="Close Menu" class="close">&#9747;</a>
-        Art gallery
+        <div class="typewriter">
+          A LETTER OF REQUEST...
+          <br>(wip art gallery)
+        </div>
+      </div>
+
+      <div id ="modal4">
+        <a href="#" title="Close Menu" class="close">&#9747;</a>
+        <div class="typewriter">
+          THE MEMORY MIRROR, BEWARE THE TRUTH THAT LIES BEHIND THE MASK!!!
+          <br> (wip about me)
+        </div>
+      </div>
+      <div id ="modal5">
+        <a href="#" title="Close Menu" class="close">&#9747;</a>
+        <div class="typewriter">
+          LIZ'S FAREWELL GIFT: A MAGICAL... PEN??
+        </div>
+        <p style="font-size:14px;"><br>
+          Soon you will awaken from your slumber and you will forget about this place. A tinge of somber coldness tugs at the edges of your heart.
+          You don't want to leave, but you can't stay here forever as there are many who love you and need you in their lives. You cannot pinpoint what
+          it is exactly that is so enchanting about this place. Was it the strange Lizard king or whatever? Or the warm aura of this place? As you 
+          lose yourself in thought, a familiar voice chimes in from behind you.
+          <br>
+          <br>➤ "Fear not our farewell friend! Take this pen and write to me when you return to your realm!"
+          <br>
+          She hands you an old fashioned ink pen. It is so old fashioned that it has a good ol' feather attached to it.
+          <br>
+          <br>➤ "Good luck on your journey, I hope to see you again!"
+          <a href="https://github.com/lizzzshan"> <img src="img/github.png" width="30px" alt="github logo"> </a>
+          <a href="https://www.linkedin.com/in/elizabeth-shan-776b13183/"> <img src="img/linkedin.png" width="30px" alt="github logo"> </a>
+        </p>
       </div>
     </div>
 </body>
@@ -64,10 +107,10 @@
 <script>
     var i = 0;
     var txt = '➤ "WOAH! You scared me!" \n \n Startled, the hooded figure frantically shoves what seems to be tiny pebbles into their bag. '+
-    '\n \n ➤"My name is Liz, short for Lizardking the Fourth from the district of Eden, slayer of demons and the mighty ruler of reptilia- *ahem* Sorry.'+
-    ' I\x27m sure you didn\x27t come for me. Anyways, why don\x27t you have a look around? I\x27ll give you a quick tour if you need it.'
-    + '\n \n (Hint: potion -> experience/projects | map -> gallery | mirror -> about me | pen -> contact info )';
-    var speed = 60;
+    '\n \n ➤"My name is Liz, short for \x27Lizardking the Fourth from the district of Eden, slayer of demons and the mighty ruler of reptilia-\x27 *ahem* Sorry.'+
+    ' I\x27m sure you didn\x27t come for me. Anyways, I think I dropped a few items while I was here. Can you keep an eye out for them just in case? Thanks!'+
+    ' \n\n [LOST ITEMS LIST: POTION, LETTER, MIRROR, PEN, STAR FRAGMENT]';
+    var speed = 50;
     
     function typeWriter() {
       if (i < txt.length) {
