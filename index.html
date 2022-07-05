@@ -1,119 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Nunito+Sans:wght@200&display=swap" rel="stylesheet">
-  <title>Liz Shan portfolio</title>
-  <!-- responsive flexbox src: https://www.w3schools.com/css/css3_flexbox_responsive.asp -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="general.css">
+    <title>Liz Shan</title>
+    <!-- FONT import from google https://fonts.google.com/-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 </head>
-<body>
-  <div class="navbar">
-    <a href="index.html">Home</a>
-    <a href="projects.html">Projects</a>
-    <a href="experience.html">Experience</a>
-    <a href="gallery.html">Gallery</a>
-  </div>
-  <br>
-  <br>
-  <!-- Leaf border here -->
-  <div class="center">
-    <img src="images/divider.png" width="50%"alt="grassy divider"><img src="images/divider.png" width="50%"alt="grassy divider">
-  </div>
-  
-  <div class="flex-container">
-    <div class="flex-item-left">
-      <img src="images/caro.png" width="65%" alt="index page drawing">
+<script>
+    document.addEventListener('contextmenu', event => event.preventDefault());
+</script>
+<body style="background-color:rgb(149, 156, 141);">
+    <div class="center">
+        <a href=#><img src = "img/logo.png" alt="logo" width ="100px" style="cursor:pointer;"></a>
     </div>
-    <div class="flex-item-right">
-      <h1 style="color:rgba(15, 14, 14, 0.705)"> Hello! I'm Liz Shan.</h1>
-      <p style="color:rgb(83, 70, 54); font-size: 25px;">
-        I draw & I code. A hopeful soon-to-be developer.
-        <br> Feel free to explore my page by clicking the links below,
-        or keep scrolling to read more about me!
-        <br>
-      </p>
-        <a href="experience.html" class="button">Experience & education</a>
-        <a href="projects.html" class="button">Projects & achievements</a>
-        <a href="gallery.html" class="button">Art gallery</a>
-        <a href="#about-me" class="button">About me</a>
-        <br>
-        <br>
-        <a href="https://www.linkedin.com/in/elizabeth-shan-776b13183/"> <img src="images\linkedin.png" width="50px"alt="linkedin"></a>
-        <a href="https://github.com/lizzzshan"><img src="images\github.png" width="50px" alt="github logo"></a>
-        <a href="https://www.instagram.com/calamanzii/"><img src="images\instagram.png" width="50px" alt="github logo"></a>
-        <p style="color:rgb(83, 70, 54); font-size:13px">ⓒ All art on this website is drawn by me unless specificed otherwise. Please do not reuse or repost without permission. </p>
+    <div class="box" id="contextmenu">
+        <!-- GOD BLESS U FR THANK U JUNKFOODJUNKIE ON STACKOVERFLOW <33333 https://stackoverflow.com/questions/40645032/creating-multiple-modals-on-a-single-page -->
+        <a href="#modal1"><img src="img/icon1.gif" alt="animated icon" style="position:absolute;left:700px;top:285px; cursor:pointer;"></a><br>
+        <a href="#modal2"><img src="img/potion.gif" alt="animated icon" width="40px" style="position:absolute;left:220px;top:75px; cursor:pointer;"></a><br>
+        <a href="#modal3"><img src="img/letter.gif" alt="animated icon" width="40px" style="position:absolute;left:270px;top:75px; cursor:pointer;"></a><br>
     </div>
-  </div>
-  <div class="center">
-    <img src="images/divider.png" width="50%"alt="grassy divider"><img src="images/divider.png" width="50%"alt="grassy divider">
-  </div>
-    <div id="about-me">
-    <div class="flex-container">
-      <div class="flex-item-left">
-        <h1 style="color:rgba(74, 82, 69, 0.705)"> It's nice to meet you!</h1>
-        <div class="flex-container">
-          <div class="flex-item-left">
-            <img src="images/grad_icon.png" width="150px" alt="grad icon!">
-          </div>
-          <div class="flex-item-right">
-            <p style="color:rgb(83, 70, 54); font-size:20px;padding: 10px; border: 2px solid rgb(56, 69, 56);">I am a recent grad
-              from University of Colorado Boulder with a BA in computer science and a minor in economics.
-              I have the most experience in software, though I also love design and UI/UX.</p>
-          </div>
-          <div class="flex-container">
-            <div class="flex-item-left">
-              <p style="color:rgb(83, 70, 54); font-size:20px;padding: 10px; border: 2px solid rgb(56, 69, 56);">Aside from art, my hobbies include nature & gardening.
-              I maintain a mini greenhouse with too many houseplants to count, & a small worm bin.</p>
+    <p style="font-size: 14px; text-align: center;">2022 © All art by me, please do not redistribute, modify, or repost.
+      <br> This page is a work in progress</p>
+    
+    <!-- MODAL CONTENT -->
+    <div id="content">
+        <!-- first modal: Little character dude-->
+        <div id="modal1">
+            <a href="#" title="Close Menu" class="close">&#9747;</a>
+            <div class="parent"> 
+                <!--  button disable -->
+                <p style="font-size:13px;">As you make your way towards the <br>island you notice a hooded red figure 
+                    <br>crouched down in the clearing, <br> picking at the ground in an almost <br> trance-like state.
+                    <br>
+                    <br>The cloaked figure seems <br> distracted at the moment. </p>
+                <button type="button" id="btn1" onclick="typeWriter()">➤ Tap on shoulder</button>
+                <p id="speech" style="font-size:13px;"></p>
+                <div class="child"><img src="img/p1.png" width="160px"><br>
+                    <a href="#">➤ Go back  </a></div>
             </div>
-            <div class="flex-item-right">
-              <img src="images/flower.png" width="150px" alt="flower icon!">
-            </div>
-          </div>
+            
         </div>
-      
+
+      <div id="modal2">
+        <a href="#" title="Close Menu" class="close">&#9747;</a>
+        XP potion
+        <p style="font-size:13px;">This is Liz's dropped XP potion! Do you dare to drink it to gain her XP points? Results may vary.</p>
+        <a href="#">➤ Drink it! </a> 
+        <a href="#">➤ It's okay...  </a>
       </div>
-      <div class="flex-item-right">
-        <img src="images/me.png" width="65%" alt="index page drawing">
+      <div id="modal3">
+        <a href="#" title="Close Menu" class="close">&#9747;</a>
+        Art gallery
       </div>
     </div>
-
-    <div class="flex-container">
-      <div class="flex-item-left">
-        <img src="images/me.jpg" width="400px" alt="pic of me and ranger" style="border-radius: 8px;">
-      </div>
-      <div class="flex-item-right">
-        <div class="flex-container">
-          <div class="flex-item-left">
-            <img src="images/worm.png" width="160px" alt="worm icon!">
-            <img src="images/worm.png" width="160px" alt="worm icon!" class="rotate30">
-          </div>
-          <div class="flex-item-right">
-            <p style="color:rgb(83, 70, 54); font-size:20px;padding: 10px; border: 2px solid rgb(56, 69, 56);">I am always looking for more ways to be more sustainable.
-              One of the most rewarding things I do is vermicompost, which is basically composting but with worms. 
-              I give worms my food & paper scraps, & in return they give me the best kind of fertilizer: worm castings.
-              I prevent my food waste from going into the landfill, & my worms give me fertilizer for my plants. It's a win-win!
-            </p>
-          </div>
-        </div>
-
-        <div class="flex-container">
-          <div class="flex-item-left">
-            <p style="color:rgb(83, 70, 54); font-size:20px;padding: 10px; border: 2px solid rgb(56, 69, 56);">
-              I also love my dogs Ranger & Missy! During the summer I am almost always at the dog park with them.
-          </div>
-          <div class="flex-item-right">
-            <img src="images/ranger-missy.png" width="200px" alt="dogs icon!">
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  </div>
 </body>
+
+<!-- Speech for cloaked figure -->
+<script>
+    var i = 0;
+    var txt = '➤ "WOAH! You scared me!" \n \n Startled, the hooded figure frantically shoves what seems to be tiny pebbles into their bag. '+
+    '\n \n ➤"My name is Liz, short for Lizardking the Fourth from the district of Eden, slayer of demons and the mighty ruler of reptilia- *ahem* Sorry.'+
+    ' I\x27m sure you didn\x27t come for me. Anyways, why don\x27t you have a look around? I\x27ll give you a quick tour if you need it.'
+    + '\n \n (Hint: potion -> experience/projects | map -> gallery | mirror -> about me | pen -> contact info )';
+    var speed = 60;
+    
+    function typeWriter() {
+      if (i < txt.length) {
+        document.getElementById("speech").innerHTML += txt.charAt(i);
+        i++;
+        setTimeout(typeWriter, speed);
+      }
+    }
+    </script>
+<!-- to future self: sorry :( -->
+
 </html>
