@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="general.css">
-    <link rel="icon" href="img/potion.gif">
+    <link rel="icon" href="img/favicon.png">
     <title>The enchanted realm of Liz Shan</title>
     <!-- FONT import from google https://fonts.google.com/-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,13 +15,13 @@
 <script>
     document.addEventListener('contextmenu', event => event.preventDefault());
 </script>
-<body style="background-color:rgb(149, 156, 141);">
+<body style="background-color:rgb(102, 107, 96);">
     <div class="center">
         <a href="index.html"><img src = "img/logo.png" alt="logo" width ="100px" style="cursor:pointer;"></a>
     </div>
     <div class="box" id="contextmenu">
         <!-- GOD BLESS U FR THANK U JUNKFOODJUNKIE ON STACKOVERFLOW <33333 https://stackoverflow.com/questions/40645032/creating-multiple-modals-on-a-single-page -->
-        <a href="#modal1"><img src="img/icon1.gif" alt="animated icon" style="position:absolute;left:700px;top:285px; cursor:pointer;"></a><br>
+        <a href="#modal1"><img src="img/icon1.gif" alt="animated icon" class="bottomright" style="cursor:pointer;"></a><br>
         <a href="#modal2"><img src="img/potion.gif" alt="animated icon" width="40px" style="position:absolute;left:220px;top:75px; cursor:pointer;"></a><br>
         <a href="#modal3"><img src="img/letter.gif" alt="animated icon" width="40px" style="position:absolute;left:270px;top:75px; cursor:pointer;"></a><br>
         <a href="#modal4"><img src="img/mirror.gif" alt="animated icon" width="35px" style="position:absolute;left:320px;top:72px; cursor:pointer;"></a><br>
@@ -38,7 +38,7 @@
             <div class="parent"> 
                 <!--  button disable -->
                 <div class="typewriter">
-                    THE CLOAKED STRANGER
+                    THE STRANGER
                 </div>
                 <p style="font-size:13px;">As you make your way towards the <br>island you notice a hooded red figure 
                     <br>crouched down in the clearing, <br> picking at the ground in an almost <br> trance-like state.
@@ -62,15 +62,27 @@
           <p style="font-size:14px;">
             This is Liz's dropped XP potion! Do you dare to drink it to gain her XP points? Results may vary.
           </p>
+        <br>
         <a href="exp.html">➤ Drink it! </a> 
+        <br><br>
         <a href="#">➤ It's okay...  </a>
       </div>
       <div id="modal3">
         <a href="#" title="Close Menu" class="close">&#9747;</a>
         <div class="typewriter">
           A LETTER OF REQUEST...
-          <br>(wip art gallery)
+          <br>(art gallery WIP)
         </div>
+        <p style="font-size:14px; font-style: italic;"> To Lizardking (totally not written by Lizardking herself).
+        <br><br> Your art is totally the best in town (Again, not Liz writing about herself). The entire kingdom is charmed by your work.
+        Please make a gallery so that everyone can view how great you are.
+        <br><br> From, 
+        <br> anonymous totally-not-Liz admirer. 
+        </p>
+        <br>
+        <a href="exp.html">➤ View art gallery</a> 
+        <br><br>
+        <a href="#">➤  Go back </a>
       </div>
 
       <div id ="modal4">
@@ -109,7 +121,7 @@
     var txt = '➤ "WOAH! You scared me!" \n \n Startled, the hooded figure frantically shoves what seems to be tiny pebbles into their bag. '+
     '\n \n ➤"My name is Liz, short for \x27Lizardking the Fourth from the district of Eden, slayer of demons and the mighty ruler of reptilia-\x27 *ahem* Sorry.'+
     ' I\x27m sure you didn\x27t come for me. Anyways, I think I dropped a few items while I was here. Can you keep an eye out for them just in case? Thanks!'+
-    ' \n\n [LOST ITEMS LIST: POTION, LETTER, MIRROR, PEN, STAR FRAGMENT]';
+    ' \n\n [LOST ITEMS LIST: POTION, LETTER, MIRROR, PEN, A VERY BLUE PLANET]';
     var speed = 50;
     
     function typeWriter() {
@@ -121,5 +133,4 @@
     }
     </script>
 <!-- to future self: sorry :( -->
-
 </html>
