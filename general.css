@@ -12,30 +12,33 @@
 .box{
     background-color: lightgrey;
     background-image: url("img/bg.png");
-    width: 100%;
+    width: 60em;
     height:450px;
     margin: auto;
     padding: 20px;
 }
+.box-items{
+  object-position: 50% 50%;
+}
 .box2{
   background-color: lightgrey;
   background-image: url("img/bg2.png");
-  width: 100%;
+  width: 60em;
   height:450px;
   margin: auto;
   padding: 20px;
 }
 .box3{
   background-color: lightgrey;
-  width: 100%;
+  width: 60em;
   height:450px;
   margin: auto;
   padding: 20px;
 }
 .bottomright {
   position: absolute;
-  bottom: 13em;
-  right: 45em;
+  bottom: 10em;
+  right: 35em;
 }
 .parent {
     position: relative;
