@@ -12,7 +12,7 @@
 .box{
     background-color: lightgrey;
     background-image: url("img/bg.png");
-    width: 60em;
+    width: 900px;
     height:450px;
     margin: auto;
     padding: 20px;
@@ -23,14 +23,14 @@
 .box2{
   background-color: lightgrey;
   background-image: url("img/bg2.png");
-  width: 60em;
+  width: 900px;
   height:450px;
   margin: auto;
   padding: 20px;
 }
 .box3{
   background-color: lightgrey;
-  width: 60em;
+  width: 900px;
   height:450px;
   margin: auto;
   padding: 20px;
