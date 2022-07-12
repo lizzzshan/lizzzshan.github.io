@@ -13,9 +13,11 @@
     background-color: lightgrey;
     background-image: url("img/bg.png");
     width: 900px;
+    max-width: 100%;
     height:450px;
     margin: auto;
     padding: 20px;
+    justify-content: space-around;
 }
 .box-items{
   object-position: 50% 50%;
@@ -24,6 +26,7 @@
   background-color: lightgrey;
   background-image: url("img/bg2.png");
   width: 900px;
+  max-width: 100%;
   height:450px;
   margin: auto;
   padding: 20px;
@@ -31,15 +34,20 @@
 .box3{
   background-color: lightgrey;
   width: 900px;
+  max-width: 100%;
   height:450px;
   margin: auto;
   padding: 20px;
 }
-.bottomright {
+.box .center{
+  margin: 0;
   position: absolute;
-  bottom: 10em;
-  right: 35em;
-}
+  top: 60%;
+  left: 55%;
+  margin-right: -50%;
+  width : 45px;
+  transform: translate(-50%, -50%) }
+  
 .parent {
     position: relative;
     width: 300px;
