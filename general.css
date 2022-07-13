@@ -39,7 +39,7 @@
   margin: auto;
   padding: 20px;
 }
-.box .center{
+.box .figure{
   margin: 0;
   position: absolute;
   top: 60%;
@@ -48,6 +48,32 @@
   width : 45px;
   transform: translate(-50%, -50%) }
   
+.box2 .figure{
+  margin: 0;
+  position: absolute;
+  top: 60%;
+  left: 35%;
+  margin-right: -50%;
+  width : 45px;
+  transform: translate(-50%, -50%) }
+.box2 .planet{
+  margin: 0;
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  margin-right: -50%;
+  width : 45px;
+  transform: translate(-50%, -50%) 
+}
+.box2 .money{
+  margin: 0;
+  position: absolute;
+  top: 80%;
+  left: 70%;
+  margin-right: -50%;
+  width : 45px;
+  transform: translate(-50%, -50%) 
+}
 .parent {
     position: relative;
     width: 300px;
