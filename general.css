@@ -87,7 +87,7 @@
     }
     
     .child {
-    position: absolute;
+    position: relative;
     margin-left: auto;
     margin-right: auto;
     top:0;
@@ -112,7 +112,7 @@
     background-color: rgba(255, 255, 255, 0.4); /* Black w/ opacity */
     }
   input[type=checkbox] {
-    position: absolute;
+    position: relative;
     clip: rect(0 0 0 0);
     }
   #modal1:target {
