@@ -22,6 +22,15 @@
 .box-items{
   object-position: 50% 50%;
 }
+.box .figure{
+  margin: 0;
+  position: relative;
+  top: 60%;
+  left: 55%;
+  height: auto;
+  margin-right: -50%;
+  width : 45px;
+  transform: translate(-50%, -50%) }
 .box2{
   background-color: lightgrey;
   background-image: url("img/bg2.png");
@@ -42,7 +51,7 @@
   transform: translate(-50%, -50%) }
 .box2 .planet{
   margin: 0;
-  position: absolute;
+  position: relative;
   top: 30%;
   left: 30%;
   margin-right: -50%;
@@ -51,7 +60,7 @@
 }
 .box2 .money{
   margin: 0;
-  position: absolute;
+  position: relative;
   top: 55%;
   left: 60%;
   margin-right: -50%;
@@ -66,15 +75,6 @@
   margin: auto;
   padding: 20px;
 }
-.box .figure{
-  margin: 0;
-  position: absolute;
-  top: 60%;
-  left: 55%;
-  height: auto;
-  margin-right: -50%;
-  width : 45px;
-  transform: translate(-50%, -50%) }
   
 .parent {
     position: relative;
@@ -166,4 +166,3 @@ button:disabled {
   #speech {
     white-space: pre-wrap;
   }
-
