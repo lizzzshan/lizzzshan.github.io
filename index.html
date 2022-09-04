@@ -28,7 +28,7 @@
         <a href="#modal5"><img src="img/pen.gif" alt="animated icon" width="40px" class="box-item"  style="cursor:pointer;"></a><br>
     </div>
     <p style="font-size: 14px; text-align: center;">2022 © All art by me, please do not redistribute, modify, or repost.
-      <br> Shoutout to the man Jesse Yang for helping me debug :)</p>
+      <br> <a href="summary.html">Click here for portfolio simple view </a> </p>
     
     <!-- MODAL CONTENT -->
     <div id="content">
@@ -40,14 +40,12 @@
                 <div class="typewriter">
                     THE STRANGER
                 </div>
-                <p style="font-size:13px;">As you make your way towards the <br>island you notice a hooded red figure 
-                    <br>crouched down in the clearing, <br> picking at the ground in an almost <br> trance-like state.
-                    <br>
-                    <br>The cloaked figure seems <br> distracted at the moment. </p>
-                <button type="button" id="btn1" onclick="typeWriter()">➤ Tap on shoulder</button>
-                <p id="speech" style="font-size:14px;"></p>
-                <div class="child"><img src="img/p1.png" width="160px"><br>
-                    <a href="#">➤ Go back  </a></div>
+                <p style="font-size:13px;">
+                  Hey! This is just a little test run page! To view my works please checkout my 
+                  <a href="summary.html">official porfolio!</a>
+                </p>
+                <img src="img/p1.png" width="160px"><br>
+                    <a href="#">➤ Go back  </a>
             </div>
             
         </div>
@@ -80,8 +78,8 @@
         <br> anonymous totally-not-Liz admirer. 
         </p>
         <br>
-        <a href="exp.html">➤ View art gallery</a> 
-        <br><br>
+        <a href="https://www.artstation.com/lizzzshan">➤ ArtStation </a> <br>
+        <br>
         <a href="#">➤  Go back </a>
       </div>
 
@@ -115,22 +113,5 @@
     </div>
 </body>
 
-<!-- Speech for cloaked figure -->
-<script>
-    var i = 0;
-    var txt = '➤ "WOAH! You scared me!" \n \n Startled, the hooded figure frantically shoves what seems to be tiny pebbles into their bag. '+
-    '\n \n ➤"My name is Liz, short for \x27Lizardking the Fourth from the district of Eden, slayer of demons and the mighty ruler of reptilia-\x27 *ahem* Sorry.'+
-    ' I\x27m sure you didn\x27t come for me. Anyways, I think I dropped a few items while I was here. Can you keep an eye out for them just in case? Thanks!'+
-    ' \n\n [LOST ITEMS LIST: POTION, LETTER, MIRROR, PEN, A VERY BLUE PLANET]';
-    var speed = 50;
-    
-    function typeWriter() {
-      if (i < txt.length) {
-        document.getElementById("speech").innerHTML += txt.charAt(i);
-        i++;
-        setTimeout(typeWriter, speed);
-      }
-    }
-    </script>
 <!-- to future self: sorry :( -->
 </html>
