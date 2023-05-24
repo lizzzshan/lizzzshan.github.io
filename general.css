@@ -97,6 +97,7 @@
 .close {
     margin: 0 auto 0.7em auto;
     max-width: 15%;
+    
     }
 /*Modal stuff */
 [id^=modal] {
@@ -166,3 +167,17 @@ button:disabled {
   #speech {
     white-space: pre-wrap;
   }
+
+  
+footer {
+  width: 100%;
+  position: relative;
+  margin-bottom: 0;
+  bottom: 0;
+}
+
+footer p {
+  width: 100%;
+  text-align: center;
+  color: black;
+}
