@@ -1,2 +1,3 @@
 # My website
-[Check me out!](lizzzshan.github.io)
+
+[Check it out!](https://lizzzshan.github.io/)
